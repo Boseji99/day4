@@ -1,9 +1,9 @@
 import React from "react";
 
-const CardComponent = (props) => {
+const CardComponent = ({products}) => {
   return (
     <>
-      {props.products.map((product) => (
+      {products.map((product) => (
         <div className="w-[21rem] h-[32rem] bg-gradient-to-r from-indigo-600 to-indigo-900 m-10 rounded-2xl">
           <h1 className="text-center text-white text-2xl p-6">
             Product Listing
